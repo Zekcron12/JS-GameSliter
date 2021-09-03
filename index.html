@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1B7578">
+  <meta name="description" content="">
+  <meta name="author" content="ZKC">
+  <meta name="copyright" content="Todos los derechos reservados © a '' ">
+
+  <title>Sliter - JS</title>
+
+  <script src="https://kit.fontawesome.com/c3a0547943.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" href="img/js.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="main_div">
+    <div class="container">
+      <button class="start">Start / Restart</button>
+      <div class="score">Puntos: <span>0</span></div>
+      
+      <div class="grid">
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div class="rps"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+  <!--<script>document.oncontextmenu = function(){return false;}</script>--> <!--Bloquear -->
+</body>
+</html>
