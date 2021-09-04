@@ -29,6 +29,7 @@ button {
 	align-items: center;
 }
 .container {
+	position: relative;
 	margin: 5rem;
 	padding: 2rem;
 	border-radius: 0.8rem;
@@ -67,6 +68,10 @@ button {
 	color: #F11F68;
 	transition: 0.5s;
 }
+.up, .down, .left, .right {
+	display: none;
+}
+
 @media screen and (min-width: 360px) and (max-width: 490px) {
 	.grid {
 		width: 18.75rem;
@@ -75,4 +80,58 @@ button {
 	.grid div:nth-last-child(-n+175) {
 		display: none;
 	}
+	.up, .down, .left, .right {
+		position: absolute;
+		display: block;
+		top: 250px;
+		left: 16px;
+		margin: 0.5rem 0rem;
+		padding: 10px;
+		outline: none;
+		cursor: pointer;
+		border: none;
+		/*border-radius: 50%;*/
+		color: #78E22F;
+		background: #001A23;
+		background: #fff;
+		box-shadow: none;
+	}
+	.up {
+		top: 395px;
+		left: 120px;
+	}
+	.down {
+		top: 395px;
+		left: 210px;
+	}
+	.right {
+		top: 250px;
+		left: 320px;
+	}
 }
+/*.up, .down, .left, .right {
+	position: absolute;
+	top: 250px;
+	left: 16px;
+	margin: 0.5rem 0rem;
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	color: #78E22F;
+	background: #001A23;
+	background: #fff;
+	box-shadow: none;
+}
+.up {
+	top: 395px;
+	left: 120px;
+}
+.down {
+	top: 395px;
+	left: 210px;
+}
+.right {
+	top: 250px;
+	left: 320px;
+}*/
