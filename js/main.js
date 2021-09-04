@@ -124,6 +124,57 @@ function control(e) {
 	}
 	moveOutcomes();
 };
+
+// Inicialize the variables
+var touchStartX = 0;
+var touchStartY = 0;
+var touchEndX = 0;
+var touchEndY = 0;
+
+
+// Add the event
+NUEVACUADRICULA[0].addEventListener('touchstart', function(event) {
+// Change the variables (start)
+touchStartX = event.changedTouches[0].screenX;
+touchStartY = event.changedTouches[0].screenY;
+
+});
+
+NUEVACUADRICULA[0].addEventListener('touchend', function(event) {
+// Change the needed variables (end)
+touchEndX = event.changedTouches[0].screenX;
+touchEndY = event.changedTouches[0].screenY;
+// Do the action
+WhatImustDo();
+});
+
+function WhatImustDo() {
+// Put a mensage in the console
+	if (touchEndX < touchStartX) { 
+		console.log('you moved left');
+		direction = -1; 
+		moveOutcomes();
+	}; 
+	if (touchEndX > touchStartX) {
+		console.log('you moved right');
+		direction = 1;
+		moveOutcomes();
+	};
+	if (touchEndY < touchStartY) { 
+		console.log('you moved down');
+		direction = +ancho;
+		moveOutcomes(); 
+	}; 
+	if (touchEndY > touchStartY) {
+		console.log('you moved up');
+		direction = -ancho;
+		moveOutcomes();
+	};
+	if (touchEndY == touchStartY & touchEndX == touchStartX) {
+		console.log('you tapped the screen');
+	};
+};
+
 document.addEventListener('keyup', control);
 BOTONSTART.addEventListener('click', startGame)
 
