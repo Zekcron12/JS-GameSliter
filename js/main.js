@@ -133,14 +133,14 @@ var touchEndY = 0;
 
 
 // Add the event
-CUADRICULA[0].addEventListener('touchstart', function(event) {
+NUEVACUADRICULA[0].addEventListener('touchstart', function(event) {
 // Change the variables (start)
 touchStartX = event.changedTouches[0].screenX;
 touchStartY = event.changedTouches[0].screenY;
 
 });
 
-CUADRICULA[0].addEventListener('touchend', function(event) {
+NUEVACUADRICULA[0].addEventListener('touchend', function(event) {
 // Change the needed variables (end)
 touchEndX = event.changedTouches[0].screenX;
 touchEndY = event.changedTouches[0].screenY;
