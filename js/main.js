@@ -133,14 +133,14 @@ var touchEndY = 0;
 
 
 // Add the event
-NUEVACUADRICULA[0].addEventListener('touchstart', function(event) {
+CUADRICULA[0].addEventListener('touchstart', function(event) {
 // Change the variables (start)
 touchStartX = event.changedTouches[0].screenX;
 touchStartY = event.changedTouches[0].screenY;
 
 });
 
-NUEVACUADRICULA[0].addEventListener('touchend', function(event) {
+CUADRICULA[0].addEventListener('touchend', function(event) {
 // Change the needed variables (end)
 touchEndX = event.changedTouches[0].screenX;
 touchEndY = event.changedTouches[0].screenY;
@@ -173,6 +173,7 @@ function WhatImustDo() {
 	if (touchEndY == touchStartY & touchEndX == touchStartX) {
 		console.log('you tapped the screen');
 	};
+	moveOutcomes();
 };
 
 document.addEventListener('keyup', control);
