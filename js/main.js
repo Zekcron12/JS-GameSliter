@@ -126,7 +126,7 @@ function control(e) {
 };
 
 // Inicialize the variables
-var touchStartX = 0;
+/*var touchStartX = 0;
 var touchStartY = 0;
 var touchEndX = 0;
 var touchEndY = 0;
@@ -175,7 +175,7 @@ function WhatImustDo() {
 	};
 	moveOutcomes();
 };
-
+*/
 document.addEventListener('keyup', control);
 BOTONSTART.addEventListener('click', startGame)
 
